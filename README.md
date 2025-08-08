@@ -37,7 +37,7 @@ You will need to open **three separate terminals**, one for each service.
 cd ml-service
 
 # Run the server
-uvicorn main:app --host 0.0.0.0 --port 8001```
+uvicorn main:app --host 0.0.0.0 --port 8001
 
 
 ```
@@ -49,7 +49,7 @@ uvicorn main:app --host 0.0.0.0 --port 8001```
 cd backend
 
 # Run the server
-npm start```
+npm start
 ```
 
 **Terminal 3: Start the Frontend Service**
@@ -59,7 +59,8 @@ npm start```
 cd frontend
 
 # Run the dev server
-npm run dev```
+npm run dev
 ```
+
 
 
