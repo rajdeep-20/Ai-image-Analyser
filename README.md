@@ -26,18 +26,29 @@ This is a full-stack web application that allows users to upload an image and re
 
 There are two ways to run this application: locally using Node/Python directly, or with Docker.
 
-### 1. Running Locally
+### Running Locally
 
-You will need to open **three separate terminals**, one for each service.
-
-**Terminal 1: Start the ML Service**
-
+look for the *start_all* batch file
 ```
+python -m venv venv
+
+.\ml-service\venv\Scripts\activate
+
+pip install -r  .\ml-service\requirements.txt 
+
+.\start_all.bat
+```
+
+<!-- You will need to open **three separate terminals**, one for each service. -->
+
+<!-- **Terminal 1: Start the ML Service** -->
+
+<!-- ```
 # Navigate to the ml-service folder
 cd ml-service
 
 # Run the server
-uvicorn main:app --host 0.0.0.0 --port 8001
+uvicorn main:app --host 0.0.0.0 --port 8001```
 
 
 ```
@@ -49,7 +60,7 @@ uvicorn main:app --host 0.0.0.0 --port 8001
 cd backend
 
 # Run the server
-npm start
+npm start```
 ```
 
 **Terminal 3: Start the Frontend Service**
@@ -59,8 +70,7 @@ npm start
 cd frontend
 
 # Run the dev server
-npm run dev
+npm run dev```
 ```
 
-
-
+ -->
